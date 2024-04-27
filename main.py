@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+import os
+
+# Get the current directory
+current_directory = os.getcwd()
+
+# Print the contents of the current directory
+print("Contents of the current directory:")
+print(os.listdir(current_directory))
+
 # Load the trained model
 model = joblib.load('logistic_regression_model.pkl')
 
